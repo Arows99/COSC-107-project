@@ -1,38 +1,69 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+    background-color: #F8F9FA; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("path/to/your/hero.jpg"); 
+    background-size: cover;
+    background-position: center;
 }
 
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #fff; 
+    color: #333;
+    padding: 20px 40px;
+    width: 100%; 
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-bottom: 5px solid #303403; 
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.2em; 
+    color: #3c3c3c;
 }
 
 main {
-    padding: 20px;
+    padding: 30px 40px; /* More padding for spaciousness */
+    text-align: center;
+    width: 80%; 
+    max-width: 600px; 
+    margin-top: 50px; 
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+.elitebook img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
 
 .countdown {
-    text-align: center;
-}
-
-.countdown p {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .timer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; 
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .timer span {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: #303403; 
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .days-label,
@@ -40,6 +71,27 @@ main {
 .minutes-label,
 .seconds-label {
     display: block;
-    font-size: 12px;
-    text-align: center;
+    font-size: 14px;
 }
+
+.about {
+    margin-top: 30px; 
+}
+
+.about p {
+    line-height: 1.5; 
+    font-size: 16px;
+    color: #666; 
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;  
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px; 
+    font-size: 24px; 
+    color: #333; 
+  }
